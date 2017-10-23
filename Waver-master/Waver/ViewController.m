@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Waver.h"
 #import <AVFoundation/AVFoundation.h>
+#import "NextViewController.h"
 
 @interface ViewController ()
 
@@ -49,9 +50,21 @@
     };
     [self.view addSubview:waver];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(20, 60, 100, 50)];
+    [button setTitle:@"PUSH" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(push) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:button];
+    
 }
 
-
+-(void)push
+{
+    NextViewController *nextVC = [[NextViewController alloc] init];
+    [self presentViewController:nextVC animated:YES completion:nil];
+}
 -(void)setupRecorder
 {
     NSURL *url = [NSURL fileURLWithPath:@"/dev/null"];
