@@ -15,6 +15,7 @@
 		0AE3A3291A3CCEA100FD562D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3A3271A3CCEA100FD562D /* LaunchScreen.xib */; };
 		0AE3A3351A3CCEA100FD562D /* WaverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3A3341A3CCEA100FD562D /* WaverTests.m */; };
 		0AE3A3401A3CEC6700FD562D /* Waver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3A33F1A3CEC6700FD562D /* Waver.m */; };
+		124CEF1E1F9ED47200A8179E /* YDWaveLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 124CEF1C1F9ED47200A8179E /* YDWaveLoadingView.m */; };
 		12F0DA741F9E110B00509C1B /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0DA731F9E110B00509C1B /* NextViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,8 @@
 		0AE3A3341A3CCEA100FD562D /* WaverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaverTests.m; sourceTree = "<group>"; };
 		0AE3A33E1A3CEC6700FD562D /* Waver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Waver.h; path = Source/Waver.h; sourceTree = "<group>"; };
 		0AE3A33F1A3CEC6700FD562D /* Waver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Waver.m; path = Source/Waver.m; sourceTree = "<group>"; };
+		124CEF1C1F9ED47200A8179E /* YDWaveLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDWaveLoadingView.m; sourceTree = "<group>"; };
+		124CEF1D1F9ED47200A8179E /* YDWaveLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDWaveLoadingView.h; sourceTree = "<group>"; };
 		12F0DA721F9E110B00509C1B /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		12F0DA731F9E110B00509C1B /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +90,7 @@
 		0AE3A3171A3CCEA100FD562D /* Waver */ = {
 			isa = PBXGroup;
 			children = (
+				124CEF1B1F9ED47200A8179E /* LoadingView */,
 				0AE3A3411A3CEC6B00FD562D /* Source */,
 				0AE3A31C1A3CCEA100FD562D /* AppDelegate.h */,
 				0AE3A31D1A3CCEA100FD562D /* AppDelegate.m */,
@@ -135,6 +139,15 @@
 				0AE3A33F1A3CEC6700FD562D /* Waver.m */,
 			);
 			name = Source;
+			sourceTree = "<group>";
+		};
+		124CEF1B1F9ED47200A8179E /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				124CEF1C1F9ED47200A8179E /* YDWaveLoadingView.m */,
+				124CEF1D1F9ED47200A8179E /* YDWaveLoadingView.h */,
+			);
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +254,7 @@
 				12F0DA741F9E110B00509C1B /* NextViewController.m in Sources */,
 				0AE3A3211A3CCEA100FD562D /* ViewController.m in Sources */,
 				0AE3A31E1A3CCEA100FD562D /* AppDelegate.m in Sources */,
+				124CEF1E1F9ED47200A8179E /* YDWaveLoadingView.m in Sources */,
 				0AE3A31B1A3CCEA100FD562D /* main.m in Sources */,
 				0AE3A3401A3CEC6700FD562D /* Waver.m in Sources */,
 			);
