@@ -19,9 +19,9 @@
 @property (nonatomic) UIColor * waveColor;
 
 @property (nonatomic) CGFloat level;
-
+/// 主线条宽度
 @property (nonatomic) CGFloat mainWaveWidth;
-
+///副线条宽度
 @property (nonatomic) CGFloat decorativeWavesWidth;
 
 @property (nonatomic) CGFloat idleAmplitude;

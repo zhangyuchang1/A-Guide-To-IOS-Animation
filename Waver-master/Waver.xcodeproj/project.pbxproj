@@ -13,7 +13,6 @@
 		0AE3A3241A3CCEA100FD562D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3A3221A3CCEA100FD562D /* Main.storyboard */; };
 		0AE3A3261A3CCEA100FD562D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3A3251A3CCEA100FD562D /* Images.xcassets */; };
 		0AE3A3291A3CCEA100FD562D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE3A3271A3CCEA100FD562D /* LaunchScreen.xib */; };
-		0AE3A3351A3CCEA100FD562D /* WaverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3A3341A3CCEA100FD562D /* WaverTests.m */; };
 		0AE3A3401A3CEC6700FD562D /* Waver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3A33F1A3CEC6700FD562D /* Waver.m */; };
 		124CEF1E1F9ED47200A8179E /* YDWaveLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 124CEF1C1F9ED47200A8179E /* YDWaveLoadingView.m */; };
 		12F0DA741F9E110B00509C1B /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0DA731F9E110B00509C1B /* NextViewController.m */; };
@@ -41,8 +40,6 @@
 		0AE3A3251A3CCEA100FD562D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0AE3A3281A3CCEA100FD562D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0AE3A32E1A3CCEA100FD562D /* WaverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AE3A3331A3CCEA100FD562D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AE3A3341A3CCEA100FD562D /* WaverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaverTests.m; sourceTree = "<group>"; };
 		0AE3A33E1A3CEC6700FD562D /* Waver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Waver.h; path = Source/Waver.h; sourceTree = "<group>"; };
 		0AE3A33F1A3CEC6700FD562D /* Waver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Waver.m; path = Source/Waver.m; sourceTree = "<group>"; };
 		124CEF1C1F9ED47200A8179E /* YDWaveLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDWaveLoadingView.m; sourceTree = "<group>"; };
@@ -73,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				0AE3A3171A3CCEA100FD562D /* Waver */,
-				0AE3A3311A3CCEA100FD562D /* WaverTests */,
 				0AE3A3161A3CCEA100FD562D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,23 +107,6 @@
 			children = (
 				0AE3A3191A3CCEA100FD562D /* Info.plist */,
 				0AE3A31A1A3CCEA100FD562D /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0AE3A3311A3CCEA100FD562D /* WaverTests */ = {
-			isa = PBXGroup;
-			children = (
-				0AE3A3341A3CCEA100FD562D /* WaverTests.m */,
-				0AE3A3321A3CCEA100FD562D /* Supporting Files */,
-			);
-			path = WaverTests;
-			sourceTree = "<group>";
-		};
-		0AE3A3321A3CCEA100FD562D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0AE3A3331A3CCEA100FD562D /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -264,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AE3A3351A3CCEA100FD562D /* WaverTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

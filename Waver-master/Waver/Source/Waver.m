@@ -86,14 +86,29 @@
         CAShapeLayer *waveline = [CAShapeLayer layer];
         waveline.lineCap       = kCALineCapButt;
         waveline.lineJoin      = kCALineJoinRound;
-        waveline.strokeColor   = [[UIColor clearColor] CGColor];
-        waveline.fillColor     = [[UIColor clearColor] CGColor];
-        [waveline setLineWidth:(i==0 ? self.mainWaveWidth : self.decorativeWavesWidth)];
-        CGFloat progress = 1.0f - (CGFloat)i / self.numberOfWaves;
-        CGFloat multiplier = MIN(1.0, (progress / 3.0f * 2.0f) + (1.0f / 3.0f));
-		UIColor *color = [self.waveColor colorWithAlphaComponent:(i == 0 ? 1.0 : 1.0 * multiplier * 0.4)];
-		waveline.strokeColor = color.CGColor;
+//        waveline.strokeColor   = [[UIColor clearColor] CGColor];
+//        waveline.fillColor     = [[UIColor clearColor] CGColor];
+//        [waveline setLineWidth:(i==0 ? self.mainWaveWidth : self.decorativeWavesWidth)];÷
+//        CGFloat progress = 1.0f - (CGFloat)i / self.numberOfWaves;
+//        CGFloat multiplier = MIN(1.0, (progress / 3.0f * 2.0f) + (1.0f / 3.0f));
+//        UIColor *color = [self.waveColor colorWithAlphaComponent:(i == 0 ? 1.0 : 1.0 * multiplier * 0.4)];
+//        waveline.strokeColor = color.CGColor;
+//
+        
+        waveline.strokeColor   = [[UIColor brownColor] CGColor];
+        waveline.fillColor     = [[UIColor purpleColor] CGColor];
+        [waveline setLineWidth:5];
+        CGFloat progress = 1;
+//        CGFloat progress = 1.0f - (CGFloat)i / self.numberOfWaves;
+//        CGFloat multiplier = MIN(1.0, (progress / 3.0f * 2.0f) + (1.0f / 3.0f));
+//        UIColor *color = [self.waveColor colorWithAlphaComponent:(i == 0 ? 1.0 : 1.0 * multiplier * 0.4)];
+        waveline.strokeColor = [UIColor greenColor].CGColor;
+        
+        
+        
         [self.layer addSublayer:waveline];
+        
+//        self.layer.mask = waveline;
         [self.waves addObject:waveline];
     }
     
@@ -135,8 +150,9 @@
             
             //Thanks to https://github.com/stefanceriu/SCSiriWaveformView
             // We use a parable to scale the sinus wave, that has its peak in the middle of the view.
-            CGFloat scaling = -pow(x / self.waveMid  - 1, 2) + 1; // make center bigger
-            
+//            CGFloat scaling = -pow(x / self.waveMid  - 1, 2) + 1; // make center bigger
+            CGFloat scaling = 0;
+
             CGFloat y = scaling * self.maxAmplitude * normedAmplitude * sinf(2 * M_PI *(x / self.waveWidth) * self.frequency + self.phase) + (self.waveHeight * 0.5);
             
             if (x==0) {
@@ -146,7 +162,7 @@
                 [wavelinePath addLineToPoint:CGPointMake(x, y)];
             }
             
-            NSLog(@"x:%f  --  y:%f",x,y);
+//            NSLog(@"x:%f  --  y:%f",x,y);
         }
         
         //交叉线
@@ -166,7 +182,7 @@
                 [wavelinePath addLineToPoint:CGPointMake(x, y2)];
             }
             
-            NSLog(@"x:%f  --  y:%f",x,y2);
+//            NSLog(@"x:%f  --  y:%f",x,y2);
         }
         
         

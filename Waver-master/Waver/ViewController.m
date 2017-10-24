@@ -46,7 +46,7 @@
 
         waver.level = normalizedValue;
         
-        NSLog(@"音量 - %f   标准化 - %f ",fenBei,normalizedValue);
+//        NSLog(@"音量 - %f   标准化 - %f ",fenBei,normalizedValue);
     };
     [self.view addSubview:waver];
     // Do any additional setup after loading the view, typically from a nib.

@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Waver/Source/Waver.m"
-            timestampString = "530453387.504035"
+            timestampString = "530519666.356634"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
             landmarkName = "-updateMeters"
             landmarkType = "7">
          </BreakpointContent>
@@ -52,11 +52,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Waver/Source/Waver.m"
-            timestampString = "530453387.504111"
+            timestampString = "530519666.357141"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "-updateMeters"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Waver/LoadingView/YDWaveLoadingView.m"
+            timestampString = "530519666.357491"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "-createWavePathWithType:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Waver/Source/Waver.m"
+            timestampString = "530519666.357563"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "-updateMeters"
             landmarkType = "7">
          </BreakpointContent>

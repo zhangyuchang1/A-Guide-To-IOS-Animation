@@ -154,6 +154,9 @@ static CGFloat kWavePositionDuration = 5;
         } else {
             [wavePath addLineToPoint:CGPointMake(x, y)];
         }
+        
+        NSLog(@"x:%f  --  y:%f",x,y);
+
     }
     
     CGFloat endY = CGRectGetHeight(self.bounds) + 10;
